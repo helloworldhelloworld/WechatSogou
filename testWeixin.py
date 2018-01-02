@@ -31,6 +31,13 @@ class WeixinTest:
 if __name__ == "__main__":
     ws_api =wechatsogou.WechatSogouAPI()
     print ws_api.get_gzh_article_by_history('高可用架构')
+	 #captcha url  try use ruokuai
+    #https://mp.weixin.qq.com/mp/verifycode?cert=1470728411 
+    #http://weixin.sogou.com/antispider/util/seccode.php?tc=1470728404
+    for i in range(0,20):
+        print ws_api.get_gzh_article_by_history('高可用架构')
     # weixin = WeixinTest()
+    # weixin.parseUlr()   
+# weixin = WeixinTest()
     # weixin.parseUlr()
 
